@@ -30,3 +30,10 @@
 ```
  docker-compose -f web.yaml up
 ```
+
+```
+docker-compose -f web.yaml ps 
+NAME                IMAGE               COMMAND                  SERVICE             CREATED             STATUS              PORTS
+root-database-1     postgres:12         "docker-entrypoint.s…"   database            10 minutes ago      Up 2 minutes        5432/tcp
+root-web-1          nginx:latest        "/docker-entrypoint.…"   web                 10 minutes ago      Up 2 minutes        80/tcp
+```
